@@ -17,3 +17,6 @@ pr
 pulls = repo.get_pulls(state='open', sort='created', base='master')
 for pr in pulls:
    print(pr.number)
+
+main_branch = repo.get_branch("main")
+commits = list(repo.get_commits(sha=main_branch.commit.sha))
