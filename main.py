@@ -12,3 +12,8 @@ print(repo)
 #Get pull requests by number
 pr = repo.get_pull(664)
 pr
+
+#Get pull requests by query
+pulls = repo.get_pulls(state='open', sort='created', base='master')
+for pr in pulls:
+   print(pr.number)
