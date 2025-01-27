@@ -8,3 +8,7 @@ repo = g.get_repo("miri-j-kim/ENSF400_Lab02")
 print(list(repo.get_branches()))
 
 print(repo)
+
+#Get pull requests by number
+pr = repo.get_pull(664)
+pr
