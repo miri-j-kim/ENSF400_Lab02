@@ -20,3 +20,4 @@ for pr in pulls:
 
 main_branch = repo.get_branch("main")
 commits = list(repo.get_commits(sha=main_branch.commit.sha))
+print(commits)
